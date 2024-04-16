@@ -2,7 +2,7 @@ package util;
 
 public abstract class Algoritmos {
 	
-	public static int fibonacci(int numero) {
+	public static int fibonacci (int numero) {
     if (numero <= 1) {
         return numero;
     } else {
@@ -16,4 +16,18 @@ public abstract class Algoritmos {
         return b;
     }
 }
+
+	    public static int factorial(int numero) {
+	        if (numero == 0 || numero == 1) {
+	            return 1;
+	        } else {
+	            int resultado = 1;
+	            for (int i = 2; i <= numero; i++) {
+	                resultado *= i;
+	            }
+	            return resultado;
+	        }
+	    }
 }
+
+	   
